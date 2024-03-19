@@ -80,7 +80,7 @@ namespace listTests
         public void ValNotInListNodeTest()
         {
             ListNode test_listNode = new ListNode().ReturnListAsNode(new List<int>() { 1, 2, 3, 5, 8 });
-            int val = 6; bool expected_result = false;
+            int val = 7; bool expected_result = false;
             bool res = test_listNode.IsValueInListNode(val);
             Assert.AreEqual(res, expected_result);
         }
